@@ -1,62 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List Web App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List Web App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to To-Do List Web App</h1>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#cta">Get Started</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">ToDoApp</div>
+        <ul class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#cta">Get Started</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>To Do List Web App</h1>
+        <p>Organize your tasks efficiently and boost your productivity.</p>
+        <a href="#cta" class="btn">Get Started</a>
+      </div>
     </header>
     <section id="features">
-        <h2>Features</h2>
-        <div class="feature-container">
-            <div class="feature">
-                <h3>Simple Interface</h3>
-                <p>Easy to use interface for quick task management.</p>
-            </div>
-            <div class="feature">
-                <h3>Real-time Sync</h3>
-                <p>Sync your tasks across all devices in real-time.</p>
-            </div>
-            <div class="feature">
-                <h3>Reminders</h3>
-                <p>Set reminders to never miss a task.</p>
-            </div>
+      <h2>Features</h2>
+      <div class="features-container">
+        <div class="feature">
+          <i class="fas fa-user-friends fa-3x"></i>
+          <h3>User-Friendly Interface</h3>
+          <p>Navigate and manage tasks with ease.</p>
         </div>
+        <div class="feature">
+          <i class="fas fa-tasks fa-3x"></i>
+          <h3>Task Organization</h3>
+          <p>Categorize and prioritize your tasks effectively.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-bell fa-3x"></i>
+          <h3>Reminders and Notifications</h3>
+          <p>Set reminders to stay on top of your tasks.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-users fa-3x"></i>
+          <h3>Collaboration</h3>
+          <p>Share tasks and lists with others seamlessly.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-chart-line fa-3x"></i>
+          <h3>Progress Tracking</h3>
+          <p>Track your task completion progress.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-sync-alt fa-3x"></i>
+          <h3>Cross-Platform Sync</h3>
+          <p>Sync your tasks across multiple devices.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-paint-brush fa-3x"></i>
+          <h3>Customizable Themes</h3>
+          <p>Personalize the app's appearance to suit your style.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-search fa-3x"></i>
+          <h3>Search Functionality</h3>
+          <p>Quickly find tasks with a powerful search feature.</p>
+        </div>
+      </div>
     </section>
+
     <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <p>"This app has revolutionized my productivity!"</p>
-                <h4>- Alex Johnson</h4>
-            </div>
-            <div class="testimonial">
-                <p>"A must-have tool for anyone looking to stay organized."</p>
-                <h4>- Emily Smith</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Simple, efficient, and effective. Highly recommended."</p>
-                <h4>- John Doe</h4>
-            </div>
-        </div>
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>
+          "This app has transformed the way I manage my daily tasks. Highly
+          recommend!"
+        </p>
+        <h4>- Devansh Varia</h4>
+      </div>
+      <div class="testimonial">
+        <p>
+          "A must-have tool for anyone looking to improve their productivity."
+        </p>
+        <h4>- Rushabh Gandhi</h4>
+      </div>
     </section>
+
     <section id="cta">
-        <h2>Get Started</h2>
-        <button>Sign Up Now</button>
+      <h2>Ready to get started?</h2>
+      <a href="signup.html" class="btn">Sign Up Now</a>
     </section>
+
     <footer>
-        <p>&copy; 2024 To-Do List Web App. All rights reserved.</p>
+      <ul>
+        <li><a href="/">Privacy Policy</a></li>
+        <li><a href="/">Terms of Service</a></li>
+      </ul>
+      <p>&copy; 2024 ToDoApp</p>
     </footer>
-</body>
+  </body>
 </html>
