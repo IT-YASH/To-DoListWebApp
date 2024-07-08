@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,51 +24,24 @@
       <div class="hero">
         <h1>To Do List Web App</h1>
         <p>Organize your tasks efficiently and boost your productivity.</p>
-        <a href="#cta" class="btn">Get Started</a>
+        <a href="#cta" class="btn_get">Get Started</a>
       </div>
     </header>
+
     <section id="features">
-      <h2>Features</h2>
+      <h2>To Do List</h2>
       <div class="features-container">
-        <div class="feature">
-          <i class="fas fa-user-friends fa-3x"></i>
-          <h3>User-Friendly Interface</h3>
-          <p>Navigate and manage tasks with ease.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-tasks fa-3x"></i>
-          <h3>Task Organization</h3>
-          <p>Categorize and prioritize your tasks effectively.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-bell fa-3x"></i>
-          <h3>Reminders and Notifications</h3>
-          <p>Set reminders to stay on top of your tasks.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-users fa-3x"></i>
-          <h3>Collaboration</h3>
-          <p>Share tasks and lists with others seamlessly.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-chart-line fa-3x"></i>
-          <h3>Progress Tracking</h3>
-          <p>Track your task completion progress.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-sync-alt fa-3x"></i>
-          <h3>Cross-Platform Sync</h3>
-          <p>Sync your tasks across multiple devices.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-paint-brush fa-3x"></i>
-          <h3>Customizable Themes</h3>
-          <p>Personalize the app's appearance to suit your style.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-search fa-3x"></i>
-          <h3>Search Functionality</h3>
-          <p>Quickly find tasks with a powerful search feature.</p>
+        <div class="todo-app">
+          <form id="todo-form">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add a new task..."
+              required
+            />
+            <button type="submit" class="btn">Add Task</button>
+          </form>
+          <ul id="todo-list"></ul>
         </div>
       </div>
     </section>
@@ -91,7 +65,7 @@
 
     <section id="cta">
       <h2>Ready to get started?</h2>
-      <a href="signup.html" class="btn">Sign Up Now</a>
+      <a href="signup.html" class="btn_get">Sign Up Now</a>
     </section>
 
     <footer>

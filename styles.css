@@ -59,7 +59,6 @@ main.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 20px;
 }
 
@@ -88,6 +87,21 @@ main.signup-container {
     margin-bottom: 5px;
 }
 
+.btn_signup{
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+.btn_signup:hover{
+    background-color: #0056b3;
+}
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="password"] {
@@ -98,7 +112,7 @@ main.signup-container {
     border-radius: 5px;
 }
 
-.btn {
+.btn_get {
     display: block;
     width: 99%;
     padding: 12px;
@@ -111,7 +125,7 @@ main.signup-container {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn_get:hover {
     background-color: #0056b3; 
 }
 
@@ -121,7 +135,9 @@ section {
 }
 
 #features {
+    padding: 60px 20px;
     background: #f9f9f9;
+    text-align: center;
 }
 
 #features h2 {
@@ -131,40 +147,89 @@ section {
 
 .features-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.feature {
+.todo-app {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px);
+    width: 100%;
+    max-width: 400px;
     box-sizing: border-box;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
 }
 
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.feature i {
-    color: #007bff;
+#todo-form {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.feature h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.feature p {
-    font-size: 16px;
-    color: #666;
+#todo-form .btn {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#todo-form .btn:hover {
+    background-color: #0056b3;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-item {
+    flex: 1;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.todo-actions .btn:hover {
+    color: #0056b3;
 }
 
 #testimonials {
